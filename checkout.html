@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Cart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./assets/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./">Enrich Cafe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./checkout.html">Place Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Checkout Form -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 mb-4">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h4>Checkout</h4>
+                    </div>
+                    <div class="card-body">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <label for="name">Your Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address:</label>
+                                <input type="text" class="form-control" id="address" placeholder="Enter your address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City:</label>
+                                <input type="text" class="form-control" id="city" placeholder="Enter your city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="card-name">Name on Card:</label>
+                                <input type="text" class="form-control" id="card-name" placeholder="Enter name on card" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="card-number">Credit Card Number:</label>
+                                <input type="text" class="form-control" id="card-number" placeholder="Enter your card number" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="expiry-date">Expiry Date:</label>
+                                    <input type="text" class="form-control" id="expiry-date" placeholder="MM/YY" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="cvv">CVV:</label>
+                                    <input type="text" class="form-control" id="cvv" placeholder="CVV" required>
+                                </div>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="terms" required>
+                                <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <a href="./success.html" class="btn btn-primary btn-block">Place Order</a>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <small>Thank you for shopping with us!</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

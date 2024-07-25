@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./assets/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./">Enrich Cafe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./checkout.html">Place Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products listing -->
+    <div class="jumbotron jumbotron-fluid text-center ">
+        <h1 class="display-5;" style="font-size: 50px;">Our Products</h1>
+        <div class="d-flex justify-content-center">
+            <!-- Card 1 -->
+            <div class="card" style="width: 18rem; margin: 1rem;">
+                <img class="card-img-top" src="./assets/1.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">French Vanilla</h5>
+                    <p class="card-text">Experience the smooth and rich flavor of our French Vanilla coffee.</p>
+                    <p class="card-text"><strong>Price: $3.00</strong></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            
+
+            <!-- Card 2 -->
+            <div class="card" style="width: 18rem; margin: 1rem;">
+                <img class="card-img-top" src="./assets/2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Mocha</h5>
+                    <p class="card-text">Feel in the perfect blend of coffee and chocolate with our Mocha.</p>
+                    <p class="card-text"><strong>Price: $4.50</strong></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card" style="width: 18rem; margin: 1rem;">
+                <img class="card-img-top" src="./assets/3.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Caramel Macchiato</h5>
+                    <p class="card-text">Enjoy the luscious taste of our Caramel Macchiato.</p>
+                    <p class="card-text"><strong>Price: $3.75</strong></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout -->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Checkout</a></li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-center">Premium Coffee</h2>
+                <p class="text-center">Fresh N' Hot, Have a Cup!</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Item</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>French Vanilla</td>
+                            <td>2</td>
+                            <td>6.00</td>
+                        </tr>
+                        <tr>
+                            <td>Mocha</td>
+                            <td>1</td>
+                            <td>4.50</td>
+                        </tr>
+                        <tr>
+                            <td>Caramel Macchiato</td>
+                            <td>1</td>
+                            <td>3.75</td>
+                        </tr>
+                        <thead>
+                            <tr>
+                                <th scope="col">Total</th>
+                                <th scope="col">4</th>
+                                <th scope="col">14.25</th>
+                            </tr>
+                        </thead>
+                    </tbody>
+                </table>
+                <div class="text-center mt-4 mb-4">
+                    <a href="checkout.html" class="btn btn-primary btn-lg">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
